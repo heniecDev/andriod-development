@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom"
+    >
+    <ImageView
+        android:id="@+id/img_top"
+        android:layout_width="1000dp"
+        android:layout_height="130dp"
+        android:src="@drawable/top"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/img_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/enter" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting"
+        android:layout_above="@+id/img_enter"
+        android:layout_alignLeft="@+id/img_enter"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/board"
+        android:layout_toRightOf="@+id/img_enter"
+        android:layout_alignBottom="@+id/img_enter"
+        android:layout_marginLeft="30dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exit"
+        android:layout_below="@+id/img_enter"
+        android:layout_alignLeft="@+id/img_enter"
+        android:layout_marginTop="40dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/help"
+        android:layout_toLeftOf="@+id/img_enter"
+        android:layout_alignTop="@+id/img_enter"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/bt_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button03"
+        android:text="点我盖章"
+        android:textStyle="italic"
+       />
+    <TextView
+        android:id="@+id/tv_stampok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您已盖章"
+        android:textStyle="italic"
+        android:textColor="#FF0000"
+        android:background="@drawable/round_button03"
+        android:layout_toRightOf="@+id/bt_stamp"
+        android:layout_alignTop="@+id/bt_stamp"
+        android:layout_alignBaseline="@+id/bt_stamp"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/bt_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="投诉"
+        android:background="@drawable/round_button03"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="30dp"/>
+    <Button
+        android:id="@+id/bt_suggestion"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="建议"
+        android:background="@drawable/round_button03"
+        android:layout_toLeftOf="@+id/bt_comp"
+        android:layout_alignTop="@+id/bt_comp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="即兴"
+        android:background="@drawable/round_button03"
+        android:layout_above="@+id/bt_comp"
+        android:layout_alignLeft="@+id/bt_comp"
+        android:layout_marginLeft="-30dp"/>
+
+    <Button
+
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="表扬"
+        android:background="@drawable/round_button03"
+        android:layout_above="@+id/bt_comp"
+        android:layout_alignRight="@+id/bt_comp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◎花样年华工作室"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

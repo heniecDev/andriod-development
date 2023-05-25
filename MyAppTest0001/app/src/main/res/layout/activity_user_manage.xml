@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/et_bk1">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:layout_margin="10dp"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:text="用户名"/>
+        <EditText
+            android:id="@+id/et_UserName"
+            android:layout_columnSpan="4"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:text="密码"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_columnSpan="4"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:text="性别"/>
+        <EditText
+            android:id="@+id/et_sex"
+            android:layout_columnSpan="4"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:text="专业"/>
+        <EditText
+            android:id="@+id/et_edu"
+            android:layout_columnSpan="4"
+            android:layout_columnWeight="1"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/bt_new"
+            android:text="新增该用户"
+            android:background="@drawable/et_bk2"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/bt_del"
+            android:text="删除该用户"
+            android:background="@drawable/et_bk2"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/bt_search"
+            android:text="查询用户"
+            android:background="@drawable/et_bk2"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/bt_update"
+            android:text="更新用户信息"
+            android:background="@drawable/et_bk2"
+            android:layout_marginRight="5dp"/>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+        <Button
+            android:id="@+id/bt_inputAll"
+            android:text="导入测试用户"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/et_bk2"/>
+
+        <Button
+            android:id="@+id/bt_searchAll"
+            android:text="显示所有用户"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/et_bk2"/>
+
+        <Button
+            android:id="@+id/bt_delAll"
+            android:text="删除所有用户"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/et_bk2"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3.5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户名"
+            android:background="@drawable/et_bk1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密码"
+            android:background="@drawable/et_bk1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="性别"
+            android:background="@drawable/et_bk1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="专业"
+            android:background="@drawable/et_bk1"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

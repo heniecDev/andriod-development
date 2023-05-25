@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="@drawable/et_bk1"
+    android:weightSum="5"
+   >
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入您的学号："
+            android:textColor="#6495ED">
+        </TextView>
+        <EditText
+            android:id="@+id/et_xh"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            ></EditText>
+        <LinearLayout
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入您的身份证号："
+            android:textColor="#6495ED"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/et_sfz"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            >
+
+        </EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/bt_czmm"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="申请重置密码"
+           android:textColor="@color/black"
+           android:background="@drawable/et_bk"
+           >
+       </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_yhm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="用户名"
+            android:ems="20">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:ems="20">
+        </EditText>
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_zcsrmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="再次输入密码"
+            android:inputType="textPassword"
+            android:ems="20">
+        </EditText>
+
+
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/et_bgyj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请写下您的宝贵意见:"
+            android:ems="200"
+            android:background="@drawable/et_shape">
+
+        </EditText>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_qdcz"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="确定重置"
+            android:textColor="@color/black"
+            android:background="@drawable/et_bk">
+
+        </Button>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="">
+        </TextView>
+        <Button
+            android:id="@+id/bt_qxbfh"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="取消并返回"
+            android:textColor="@color/black"
+            android:background="@drawable/et_bk">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

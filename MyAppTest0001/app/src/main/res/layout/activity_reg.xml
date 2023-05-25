@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:layout_margin="10dp"
+    android:useDefaultMargins="true">
+    <TextView
+        android:text="用户名">
+    </TextView>
+    <EditText
+        android:id="@+id/user"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="1"
+        android:hint="请输入用户名">
+    </EditText>
+    <TextView
+        android:text="密码">
+    </TextView>
+
+    <EditText
+        android:id="@+id/pwd1"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="1"
+        android:hint="请输入密码"
+        android:inputType="textPassword"></EditText>
+
+    <TextView
+        android:text="密码再输入">
+    </TextView>
+    <EditText
+        android:id="@+id/pwd2"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="1"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword">
+    </EditText>
+    <TextView
+        android:text="性别"
+        android:layout_gravity="center_vertical">
+    </TextView>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="1">
+        <RadioButton
+            android:id="@+id/regSex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/regSex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女">
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:text="爱好"
+        android:layout_gravity="center_vertical">
+
+    </TextView>
+    <CheckBox
+        android:id="@+id/regCheck1"
+        android:text="旅游">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/regCheck2"
+        android:text="阅读">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/regCheck3"
+        android:text="唱歌">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/regCheck4"
+        android:text="运动">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/regCheck5"
+        android:text="游戏"
+        android:layout_column="1">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/regCheck6"
+        android:text="乐器">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/regCheck7"
+        android:text="绘画">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/regCheck8"
+        android:text="棋类">
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/ck_pro"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="5"
+        android:text="本人接受以下协议"
+        android:enabled="false"
+        ></CheckBox>
+
+    <TextView
+        android:text="专业" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_columnSpan="3" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_columnSpan="5">
+
+       <TextView
+           android:id="@+id/tv_pro"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="请点击查看协议详情"
+           android:gravity="center"
+           >
+       </TextView>
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_columnSpan="5">
+        <Button
+            android:id="@+id/ButtonPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册预览"
+            android:enabled="false"
+            android:layout_weight="1"
+            >
+        </Button>
+        <Button
+            android:id="@+id/ButtonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置"
+            android:layout_weight="1"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/ButtonChanel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_weight="1"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="5">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            >
+        </TextView>
+
+    </LinearLayout>
+</GridLayout>

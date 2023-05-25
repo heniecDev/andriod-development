@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lawn"
+    android:id="@+id/frameLayout_game"
+    >
+    <TextView
+        android:id="@+id/tv_tips02"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#d71345"
+        android:visibility="invisible"/>
+<!--    <TextView-->
+<!--        android:id="@+id/tv_tips03"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:text=""-->
+<!--        android:textColor="#d71345"-->
+<!--        android:visibility="invisible" />-->
+<!--    <ImageView-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/bubble"/>-->
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/butterflysmall"/>-->
+
+
+
+
+</FrameLayout>
